@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính lãi suất ngân hàng</title>
+</head>
+
+<body>
+ 
+    <script>
+        let tiengui;
+        tiengui = parseInt(prompt("Nhập số tiền gửi đơn vị triệu đồng"));
+        let laisuat;
+        laisuat = parseFloat(prompt("Nhập lãi suất, tỷ lệ %:"))
+        let n;
+        n = parseInt(prompt("Nhập số năm gửi tiết kiệm"));
+        let profit = tiengui + n * (tiengui * laisuat/100) ;
+        document.write ("Tổng tiền lãi sau " + n + "năm là: " + profit + " triệu đồng" );
+        
+    </script>
+
+
+</body>
+
+</html>

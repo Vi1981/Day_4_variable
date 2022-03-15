@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In nội dung</title>
+</head>
+
+<body>
+    <script>
+
+        let receiver = prompt("Nhập họ và tên:");
+        let place = prompt("Nhập địa điểm:");
+        let date = parseInt(prompt("Nhập ngày:"));
+        let month = parseInt(prompt("Nhập tháng:"));
+        let year = parseInt(prompt("Nhập năm:"));
+        let timesend = " Ngày " + (date <10 ? "0" + date : date) + " tháng  " + (month < 10 ? "0" + month : month) + " năm " + year;
+        let lettercontent =
+            "  thương nhớ,<br/>" +
+            "Em không biết phải nói sao để anh hiểu rằng, em nhớ anh thật nhiều." + "Em yêu anh đến khi trái tim này tan thành nghìn mảnh. Tất cả những gì em yêu thương," +
+            "em khát khao và cần đến, chính là anh, mãi mãi về sau. Em chỉ muốn ở bên anh," + " Yêu anh rất nhiều.<br/> <br/>";
+        document.write(receiver+lettercontent+ place + ", " + timesend);
+
+    </script>
+</body>
+
+</html>
